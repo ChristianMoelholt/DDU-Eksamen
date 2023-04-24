@@ -12,8 +12,10 @@ public class PlayerController : MonoBehaviour
     public Vector2 _moveInput;
     public Rigidbody2D _rb;
     public float collisionOffset = 0.05f;
-
     public ContactFilter2D movementFilter;
+
+    [SerializeField] Transform hand;
+
     SpriteRenderer spriteRenderer;
     Animator animator;
     List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
@@ -31,7 +33,10 @@ public class PlayerController : MonoBehaviour
         //spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-
+    void Update()
+    {
+        RotateHand();
+    }
 
     private void FixedUpdate()
     {
@@ -68,6 +73,11 @@ public class PlayerController : MonoBehaviour
         //}
     }
 
+    void RotateHand()
+    {
+        float angle = Utility.AngleTowardsMouse(hand.position);
+        hand.rotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
+    }
     private bool TryMove(Vector2 direction)
     {
 
