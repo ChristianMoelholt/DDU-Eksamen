@@ -4,8 +4,28 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
+    public DetectionZone detectionZone;
+    public float moveSpeed = 500f;
+    Rigidbody2D rb;
 
-    [SerializeField] private float speed;
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+    private void FixedUpdate()
+    {
+        if (detectionZone.detectedObjects.Count > 0)
+        {
+            //Calculate direction to target object
+            Vector2 direction = (detectionZone.detectedObjects[0].transform.position - transform.position).normalized;
+
+            //Move towards detected object
+            rb.AddForce(direction * moveSpeed * Time.deltaTime);
+        }
+    }
+
+    /*[SerializeField] private float speed;
     [SerializeField] private float rotationSpeed;
     [SerializeField] private float screenBorder;
 
@@ -87,5 +107,5 @@ public class EnemyMovement : MonoBehaviour
     private void SetVelocity()
     {
         rigidbody.velocity = transform.up * speed;
-    }
+    }*/
 }

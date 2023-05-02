@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 772.8
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Project
   m_RootView: {fileID: 7}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -75,7 +75,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 116
+  controlID: 98
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 101
+  controlID: 103
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -276,7 +276,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 102
+  controlID: 104
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -355,22 +355,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Game
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/Game
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\kaspe\OneDrive\Dokumenter\Teknikfag A Digital\Repository\DDU-Eksamen\DDU-Eksamens-Produkt
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 39.80002}
-    m_SelectedIDs: bc610000
-    m_LastClickedID: 25020
-    m_ExpandedIDs: 00000000b2610000b6610000b8610000ba610000bc610000
+    scrollPos: {x: 0, y: 183.80002}
+    m_SelectedIDs: 26620000
+    m_LastClickedID: 25126
+    m_ExpandedIDs: 00000000026200000462000006620000086200000a62000020620000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -398,7 +398,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b2610000b4610000b6610000b8610000ba610000bc610000
+    m_ExpandedIDs: 00000000026200000462000006620000086200000a620000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -528,9 +528,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 6a8b0000
-      m_LastClickedID: 35690
-      m_ExpandedIDs: aafbfeffae07ffffb807ffffd452ffff9a56fffffc56ffff405affffe072ffff3e73ffffaa73ffff1074ffff6874ffffec74ffff3a75ffff9e75fffff475ffff3476ffff7476ffffb476ffffd077ffff1078ffff5078ffffae78ffff40bdffff26fbfffffe5f0000
+      m_SelectedIDs: 76720000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 34adfeff7eadfeffc8adfefffcb2feffa8f5feffea2dffffa632ffffa832ffff3a33ffffc233ffff6236ffff8c6dffff087cffffec7effff5a7ffffff87fffff8480ffff4a82ffffd482ffff5e83ffff9091ffff0492ffffb692ffff7c98ffff7e9afffff89cffffcca3ffff02abffff08b1ffff82b1ffff50b4ffffd6b4ffff90b7ffff8ac4ffff10daffff12e9ffff1ce9ffff5ee9ffff26fbffff80900000a2900000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -674,7 +674,7 @@ MonoBehaviour:
       containerId: overlay-container--right
       floating: 0
       collapsed: 0
-      displayed: 1
+      displayed: 0
       snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
@@ -835,9 +835,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.9370859, y: 0.5959915, z: 2.5869892}
+    m_Target: {x: -10.584105, y: -1.2546487, z: -5.2732687}
     speed: 2
-    m_Value: {x: 0.9370859, y: 0.5959915, z: 2.5869892}
+    m_Value: {x: -10.584105, y: -1.2546487, z: -5.2732687}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -888,9 +888,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 13.0277405
+    m_Target: 14.888653
     speed: 2
-    m_Value: 13.0277405
+    m_Value: 14.888653
   m_Ortho:
     m_Target: 1
     speed: 2

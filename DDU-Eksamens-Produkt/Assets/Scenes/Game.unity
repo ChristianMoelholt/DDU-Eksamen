@@ -438,6 +438,7 @@ MonoBehaviour:
   enemyPrefabs:
   - {fileID: 6959465922910784148, guid: 2efda96d9f070e847b7e526fbe7ca3ac, type: 3}
   canSpawn: 1
+  spawnLimet: 5
 --- !u!4 &153328071
 Transform:
   m_ObjectHideFlags: 0
@@ -453,7 +454,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &174392055
+--- !u!1 &413444057
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -461,37 +462,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 174392056}
-  - component: {fileID: 174392057}
+  - component: {fileID: 413444060}
+  - component: {fileID: 413444059}
+  - component: {fileID: 413444058}
   m_Layer: 0
-  m_Name: Graphics
+  m_Name: GraphicsSpritePlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &174392056
-Transform:
+--- !u!114 &413444058
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 174392055}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1241175840}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &174392057
+  m_GameObject: {fileID: 413444057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f6039c7e27806348ad2863fc9139498, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1241175840}
+--- !u!212 &413444059
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 174392055}
+  m_GameObject: {fileID: 413444057}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -523,8 +523,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1807546163
-  m_SortingLayer: 5
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: caf0e11386d8d7643ae656fc523907a0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -537,6 +537,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &413444060
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413444057}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.054116778, y: 0.48962766, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -654,6 +669,7 @@ MonoBehaviour:
   enemyPrefabs:
   - {fileID: 6959465922910784148, guid: 2efda96d9f070e847b7e526fbe7ca3ac, type: 3}
   canSpawn: 1
+  spawnLimet: 5
 --- !u!4 &581083047
 Transform:
   m_ObjectHideFlags: 0
@@ -662,76 +678,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 581083045}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -18, y: 0, z: 0}
+  m_LocalPosition: {x: -12.12, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &607783322
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 607783323}
-  - component: {fileID: 607783325}
-  - component: {fileID: 607783324}
-  m_Layer: 0
-  m_Name: Hand
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &607783323
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 607783322}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1241175840}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &607783324
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 607783322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38e5d291953591e46b2b1713dc119507, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  rotationSpeed: 720
---- !u!114 &607783325
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 607783322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3881cf9acfcd01447bbe639cc9c44e8d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 4388706229800782448, guid: 05ffa764edca53a45ad72a46f5169ba8, type: 3}
-  bulletSpeed: 9
-  timeBetweenShots: 0.5
-  weaponOffset: {fileID: 816844112}
 --- !u!1 &735722972
 GameObject:
   m_ObjectHideFlags: 0
@@ -764,7 +717,9 @@ MonoBehaviour:
   spawnRate: 4
   enemyPrefabs:
   - {fileID: 6959465922910784148, guid: 2efda96d9f070e847b7e526fbe7ca3ac, type: 3}
+  - {fileID: 6959465922910784148, guid: 2efda96d9f070e847b7e526fbe7ca3ac, type: 3}
   canSpawn: 1
+  spawnLimet: 5
 --- !u!4 &735722974
 Transform:
   m_ObjectHideFlags: 0
@@ -878,7 +833,7 @@ GameObject:
   - component: {fileID: 1241175846}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -984,8 +939,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 816844112}
-  - {fileID: 174392056}
-  - {fileID: 607783323}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1555,6 +1508,7 @@ MonoBehaviour:
   enemyPrefabs:
   - {fileID: 6959465922910784148, guid: 2efda96d9f070e847b7e526fbe7ca3ac, type: 3}
   canSpawn: 1
+  spawnLimet: 5
 --- !u!4 &1981365518
 Transform:
   m_ObjectHideFlags: 0
@@ -1601,8 +1555,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 612596cd6fbb09c469afbc9875c5c83d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  iSceneToLoad: 1
-  sSceneToLoad: 1
+  iSceneToLoad: 2
+  sSceneToLoad: 2
   loadByInt: 1
 --- !u!212 &2126524891
 SpriteRenderer:
