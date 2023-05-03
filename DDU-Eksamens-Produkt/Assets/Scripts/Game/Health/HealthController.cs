@@ -42,7 +42,9 @@ public class HealthController : MonoBehaviour
 
         if (currentHealth == 0)
         {
+            EnemyWaveSpawner.onEnemyDestroy.Invoke();
             OnDied.Invoke();
+            PlayerDied();
         }
         else
         {
@@ -50,18 +52,9 @@ public class HealthController : MonoBehaviour
         }
     }
 
-    public void AddHealth(float AmountToAdd)
+    private void PlayerDied()
     {
-        if (currentHealth == maximumHealth)
-        {
-            return;
-        }
-
-        currentHealth += AmountToAdd;
-
-        if (currentHealth > maximumHealth)
-        {
-            currentHealth = maximumHealth;
-        }
+        LevelManager.instance.GameOver();
+        gameObject.SetActive(false);
     }
 }

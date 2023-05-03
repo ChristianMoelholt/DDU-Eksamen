@@ -220,7 +220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectionZone: {fileID: 1955256885570853413}
-  moveSpeed: 60000
+  moveSpeed: 55000
 --- !u!114 &6959465922910784149
 MonoBehaviour:
   m_ObjectHideFlags: 0
