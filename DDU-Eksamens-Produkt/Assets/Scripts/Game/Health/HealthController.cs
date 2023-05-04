@@ -4,15 +4,20 @@ using UnityEngine;
 using UnityEngine.Events;
 public class HealthController : MonoBehaviour
 {
-    [SerializeField] private float currentHealth;
+    [SerializeField] public float currentHealth;
     [SerializeField] private float maximumHealth;
 
+    Animator animator;
     public float RemainingHealthPercentage
     {
         get
         {
             return currentHealth / maximumHealth;
         }
+    }
+
+    public void Start(){
+        animator = GetComponent<Animator>();
     }
 
     public bool IsInvincible { get; set; }
@@ -39,7 +44,7 @@ public class HealthController : MonoBehaviour
         {
             currentHealth = 0;
         }
-        //EnemyWaveSpawner.onEnemyDestroy.Invoke();
+        
         if (currentHealth == 0)
         {
             OnDied.Invoke();
@@ -48,7 +53,10 @@ public class HealthController : MonoBehaviour
         else
         {
             OnDamaged.Invoke();
+            animator.SetTrigger("Damaged");
         }
+
+
     }
 
     private void PlayerDied()
