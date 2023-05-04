@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class EnemyWaveSpawner : MonoBehaviour
 {
-    [Header("References")]
+    /*[Header("References")]
     [SerializeField] private GameObject[] enemyPrefabs;
 
     [Header("Attributes")]
@@ -26,7 +26,6 @@ public class EnemyWaveSpawner : MonoBehaviour
     private void Awake()
     {
         onEnemyDestroy.AddListener(EnemyDestroyed);
-
     }
 
     private void Start()
@@ -47,13 +46,13 @@ public class EnemyWaveSpawner : MonoBehaviour
             enemiesAlive++;
             timeSinceLastSpawn = 0f;
         }
-
+        
         if (enemiesAlive == 0 && enemiesLeftToSpawn == 0)
         {
             EndWave();
         }
     }
-
+    
     private void EnemyDestroyed()
     {
         enemiesAlive--;
@@ -86,6 +85,6 @@ public class EnemyWaveSpawner : MonoBehaviour
 
     private int EnemiesPerWave()
     {
-        return Mathf.RoundToInt(baseEnemies * Mathf.Pow(currentWave, 0.75f));
-    }
+        return Mathf.RoundToInt(baseEnemies * Mathf.Pow(currentWave, difficultyScalingFactor));
+    }*/
 }

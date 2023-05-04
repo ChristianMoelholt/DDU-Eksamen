@@ -39,12 +39,11 @@ public class HealthController : MonoBehaviour
         {
             currentHealth = 0;
         }
-
+        //EnemyWaveSpawner.onEnemyDestroy.Invoke();
         if (currentHealth == 0)
         {
-            EnemyWaveSpawner.onEnemyDestroy.Invoke();
             OnDied.Invoke();
-            PlayerDied();
+            PlayerDied();       
         }
         else
         {
