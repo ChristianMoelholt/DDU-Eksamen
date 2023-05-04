@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 public class HealthController : MonoBehaviour
 {
-    [SerializeField] public float currentHealth;
+    [SerializeField] private float currentHealth;
     [SerializeField] private float maximumHealth;
 
     Animator animator;
