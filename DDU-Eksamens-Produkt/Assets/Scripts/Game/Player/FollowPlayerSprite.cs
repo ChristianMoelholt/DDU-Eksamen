@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class FollowPlayerSprite : MonoBehaviour
 {
     [SerializeField] private Transform player;
@@ -10,4 +11,5 @@ public class FollowPlayerSprite : MonoBehaviour
     {
         transform.position = new Vector3(player.position.x, player.position.y, player.position.z);  
     }
+    
 }

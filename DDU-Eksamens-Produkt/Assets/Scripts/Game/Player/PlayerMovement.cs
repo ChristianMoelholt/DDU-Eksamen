@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 smoothedMovementInput;
     private Vector2 movementInputSmoothVelocity;
     private Camera camera;
-
+    
     private void Awake()
     {
         rigidbody = GetComponent<Rigidbody2D>();
